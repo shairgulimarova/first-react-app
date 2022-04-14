@@ -22,7 +22,7 @@ function App() {
       </header>    
      <main>
         <Routes>
-          <Route path="about" element={<About />}/>
+          <Route path="/about" element={<About />}/>
             <Route path="github" element={<Github/>}/>
             <Route path="notion" element = {<Notion />}/>
             <Route path="members" element = {<Members />}/>
