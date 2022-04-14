@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap');
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Kaushan Script', cursive;
+  background-image: url("images/we.jfif");
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
