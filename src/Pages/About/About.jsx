@@ -8,6 +8,7 @@ function About() {
             TEAM WORK WITH SCRUM IS JUST FUN! 
             FORE MORE INFO ABOUT US  </p
             >
+            <h2>Shairgul Imarova</h2>
     </section>
   )
 }
