@@ -22,6 +22,7 @@ function App() {
       </header>    
      <main>
         <Routes>
+
           <Route index="/" element={<About />}/>
             <Route path="github" element={<Github/>}/>
             <Route path="notion" element = {<Notion />}/>
