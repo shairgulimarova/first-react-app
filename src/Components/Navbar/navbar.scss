@@ -10,10 +10,12 @@
     }
 
     &__logo{
-        color: #a2ed77;
-        text-transform: uppercase;
-        font-weight: 700;
+        position: relative;
+        animation-name: runFeet;
     }
+
+   
+
 
     &__toggle{
         display: none;
@@ -34,6 +36,15 @@
         }
     }    
 }
+@keyframes runFeet{
+    0%{
+        rotate: 90px;
+    }
+    100%{
+        rotate: 90px;
+    }
+}
+
 
 @media screen and (max-width:768px){
     .navbar{

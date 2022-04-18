@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <nav className="navbar">
      <div className="container navbar__container">
-       <Link to='/'className='navbar__logo'> <img width={200} src={newMovers}></img></Link>
+       <Link to='/'className='navbar__logo'> <img className="navbar__logo-walkingFeet" width={200} src={newMovers}></img></Link>
        <button onClick={showMenu}  className='navbar__toggle'> 
        <img src={menuIcon} alt="movers"></img>
        </button>

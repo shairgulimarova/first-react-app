@@ -5,7 +5,9 @@ function Members() {
     <section className="members">
         <h1>Info about members will be added soon!</h1>
     </section>
+   
   )
+  
 }
 
 export default Members
