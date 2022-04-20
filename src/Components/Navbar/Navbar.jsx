@@ -12,19 +12,55 @@ function Navbar() {
         setMenuActive(!menuActive);
     }
 
+    const menuItems = [
+      {
+        id:1, 
+        menu:"about",
+        link:"/"
+      },
+      {
+        id:2, 
+        menu:"github",
+        link:"github"
+      },
+      {
+        id:3, 
+        menu:"notion",
+        link:"notion"
+      },
+      {
+        id:4, 
+        menu:"members",
+        link:"members"
+      },
+      {
+        id:5, 
+        menu:"contacts",
+        link:"contacts"
+      }
+    ]
+
   return (
     <nav className="navbar">
      <div className="container navbar__container">
-       <Link to='/'className='navbar__logo'> <img className="navbar__logo-walkingFeet" width={200} src={newMovers}></img></Link>
+       <Link to='/'className='navbar__logo'> <img className="navbar__logo-walkingFeet" width={100} src={newMovers}></img></Link>
+       <p className="navbar__name">shaiRGUL</p>
        <button onClick={showMenu}  className='navbar__toggle'> 
        <img src={menuIcon} alt="movers"></img>
        </button>
        <div className={menuActive ? "navbar__menu navbar__menu--show" : "navbar__menu"}>
-         <NavLink onClick={showMenu} to="/about" className='navbar__menu-link'>About</NavLink>
+         {/* <NavLink onClick={showMenu} to="/" className='navbar__menu-link'>About</NavLink>
          <NavLink onClick={showMenu} to="/github" className='navbar__menu-link'>Github</NavLink>
          <NavLink onClick={showMenu} to="/notion"  className='navbar__menu-link'>Notion</NavLink>
          <NavLink onClick={showMenu} to="/members" className='navbar__menu-link'>Members</NavLink>
-         <NavLink onClick={showMenu} to="/contacts"  className='navbar__menu-link'>Contacts</NavLink>
+         <NavLink onClick={showMenu} to="/contacts"  className='navbar__menu-link'>Contacts</NavLink> */}
+         {menuItems.map((menuItem)=>{
+           return (
+           <NavLink onClick={showMenu} to={menuItem.link} className="navbar__menu-link" key={menuItem.id}>{menuItem.menu}</NavLink>
+         )
+         })
+        }
+         
        </div>
      </div>
     </nav>
