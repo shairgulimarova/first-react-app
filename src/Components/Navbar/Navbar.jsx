@@ -20,8 +20,8 @@ function Navbar() {
       },
       {
         id:2, 
-        menu:"github",
-        link:"github"
+        menu:"skills",
+        link:"skills"
       },
       {
         id:3, 

@@ -8,6 +8,7 @@ import shairgulPhoto from '../../images/ya.jpg'
 
 
 
+
 function About() {
     const animatedTextRef = useRef();
     useEffect(()=>{
@@ -31,7 +32,7 @@ function About() {
         <h1 className='about__title'>Shairgul Imarova</h1>
         <p className='about__subtitle'>Position: Junior Front-End Developer</p>
         <p className='about__skills'><span ref={animatedTextRef}> </span></p>
-        <p className='about__poem'>Show me the way to, <br></br>
+        <p className='about__poem'> Show me the way to, <br></br>
         Where is the main Goal! <br></br>
         I'll come there asap, <br></br>
         before a rooster wakes up! 

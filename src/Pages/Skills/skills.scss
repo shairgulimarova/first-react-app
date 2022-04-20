@@ -1,0 +1,79 @@
+
+.skills{
+    text-align: center;
+    
+
+    &__intro{
+        margin-bottom: 45px;
+        padding-top: 45px;
+    
+    h1,
+    p{
+        margin: 0;
+    }
+    }
+
+    &__description{
+        margin-bottom: 45px;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        li{
+            background-color: black;
+            color: white;
+            padding: 10px 45px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            svg{
+                font-size: 1.3em;
+            }
+        }
+    }
+
+        &__portfolio{
+           ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;  
+                gap: 20px;      
+            }
+            li{
+                position: relative;
+                width: 30%;
+                list-style: none;
+                h4{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    padding: 10px 20px;
+                    background-color: transparentize($color: #000000, $amount: 0.2);
+                    color: #fff;
+                    width: 100%;
+                    opacity: 0;
+                    transition: all .3s ease; 
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            
+                img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            
+            }
+        }
+    }
+}
+

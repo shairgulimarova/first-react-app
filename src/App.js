@@ -1,7 +1,7 @@
 
 import {Routes,Route} from "react-router-dom";
 import About from "./Pages/About/About";
-import Github from "./Pages/Github/Github";
+import Skills from "./Pages/Skills/Skills";
 import Notion from "./Pages/Notion/Notion";
 import Members from "./Pages/Members/Members";
 import Contacts from "./Pages/Contacts/Contacts";
@@ -24,7 +24,7 @@ function App() {
         <Routes>
 
           <Route index="/" element={<About />}/>
-            <Route path="github" element={<Github/>}/>
+            <Route path="skills" element={<Skills/>}/>
             <Route path="notion" element = {<Notion />}/>
             <Route path="members" element = {<Members />}/>
             <Route path="contacts" element = {<Contacts/>}/>
