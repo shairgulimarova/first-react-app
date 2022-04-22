@@ -1,5 +1,6 @@
 import { useState } from "react"; 
 import {Link,NavLink} from "react-router-dom"; 
+import {motion} from "framer-motion"; 
 
 import './navbar.scss';
 import menuIcon from "../../images/menu.svg"
@@ -43,7 +44,19 @@ function Navbar() {
   return (
     <nav className="navbar">
      <div className="container navbar__container">
-       <Link to='/'className='navbar__logo'> <img className="navbar__logo-walkingFeet" width={100} src={newMovers}></img></Link>
+       <Link to='/'className='navbar__logo'> <motion.img 
+       animate={{rotate:360}}
+       transition={{
+         duration: 4,
+         repeat: Infinity,
+         delay:0,
+       }}
+
+       whileHover={{
+         scale:1.5,
+       }}
+       
+       className="navbar__logo-walkingFeet" width={100} src={newMovers} alt="logo" /></Link>
        <p className="navbar__name">shaiRGUL</p>
        <button onClick={showMenu}  className='navbar__toggle'> 
        <img src={menuIcon} alt="movers"></img>

@@ -1,11 +1,14 @@
 
 import {Routes,Route} from "react-router-dom";
+import {motion} from "framer-motion"
 import About from "./Pages/About/About";
 import Skills from "./Pages/Skills/Skills";
 import Notion from "./Pages/Notion/Notion";
 import Members from "./Pages/Members/Members";
 import Contacts from "./Pages/Contacts/Contacts";
 import Notfound from "./Pages/Notfound/Notfound";
+
+
 
 
 

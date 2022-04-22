@@ -6,19 +6,68 @@ import{DiJavascript} from 'react-icons/di'
 import portfolio1 from '../../images/portfolio1.svg'
 import portfolio2 from '../../images/portfolio2.jpg'
 import portfolio3 from '../../images/portfolio3.svg'
+import {motion} from "framer-motion"
 
 
 
 
 function Skills() {
+  const textVariants = {
+    hidden:{
+      x:-100,
+      opacity:0,
+    },
+    visible: custom =>( {
+      x:0,
+      opacity:1,
+      transition:{delay:custom * 0.7}
+    })
+  }
+
+  const imgVariants = {
+    hidden:{
+      y:100,
+      opacity:0
+    },
+    visible:custom =>({
+      y:0,
+      opacity:1,
+      transition:{delay:custom * 0.7}
+    })
+  }
+
+
   return (
-    <section className="skills">
+    <motion.section 
+    initial = "hidden"
+    whileInView ="visible"
+    className="skills">
         <div className="container">
           <div className="skills__intro">
-            <h1>Wellcome to the page about my skills!</h1>
-            <p>Front-End React Developer</p>
+            <motion.h1
+            initial={"hidden"}
+
+            animate={"visible"}
+            variants={textVariants}
+            custom={1}
+            >Wellcome to My Skills</motion.h1> 
+            <motion.p 
+             initial={"hidden"}
+
+            animate={"visible"}
+            variants={textVariants}
+            custom={2}
+            > Front-End React Developer
+            </motion.p>
+          
           </div>
-          <div className="skills__description">
+          <motion.div 
+          initial={"hidden"}
+
+          animate={"visible"}
+          variants={textVariants}
+          custom={3}
+          className="skills__description">
             <h3>My skills</h3>
             <ul>
               <li><FaHtml5/></li>
@@ -27,26 +76,32 @@ function Skills() {
               <li><FaSass/></li>
               <li><FaReact/></li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="skills__portfolio">
+          <motion.div 
+           initial={"hidden"}
+
+           animate={"visible"}
+           variants={imgVariants}
+           custom={4}
+          className="skills__portfolio">
             <h4>Latest Works</h4>
             <ul>
               <li>
-                <img width={100} src={portfolio1}/>
+                <img width={100} src={portfolio1} alt="portfolio1"/>
                 <h4>IT start up</h4>
               </li>
               <li>
-                <img  width={100} src={portfolio2}/>
+                <img  width={100} src={portfolio2} alt="portfolio2"/>
                 <h4>IT Project</h4>              
               </li>
-              <li><img width={100} src={portfolio3}/>
+              <li><img width={100} src={portfolio3} alt="portfolio3"/>
               <h4>Website Templates Site</h4>
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
-    </section>
+    </motion.section>
   )
 }
 
