@@ -1,19 +1,14 @@
 
 import {Routes,Route} from "react-router-dom";
-import {motion} from "framer-motion"
-import About from "./Pages/About/About";
-import Skills from "./Pages/Skills/Skills";
-import Notion from "./Pages/Notion/Notion";
-import Members from "./Pages/Members/Members";
-import Contacts from "./Pages/Contacts/Contacts";
-import Notfound from "./Pages/Notfound/Notfound";
+import { About, Skills, Blog, Members, Contacts,Notfound } from "./Pages";
 
 
 
 
 
 
-import Navbar from "./Components/Navbar/Navbar"
+
+import {Navbar} from './Components'
 
 import './app.scss';
 
@@ -28,7 +23,7 @@ function App() {
 
           <Route index="/" element={<About />}/>
             <Route path="skills" element={<Skills/>}/>
-            <Route path="notion" element = {<Notion />}/>
+            <Route path="blog" element = {<Blog />}/>
             <Route path="members" element = {<Members />}/>
             <Route path="contacts" element = {<Contacts/>}/>
             <Route path="*" element = {<Notfound/>}/>

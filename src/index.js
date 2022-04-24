@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './index.scss';
 import './Pages/About/about.scss'
 import './Pages/Skills/skills.scss'
-import './Pages/Notion/notion.scss';
+import './Pages/Blog/blog.scss';
 import './Pages/Members/members.scss'
 import './Pages/Contacts/contacts.scss'
 import './Pages/Notfound/notfound.scss'

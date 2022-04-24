@@ -26,8 +26,8 @@ function Navbar() {
       },
       {
         id:3, 
-        menu:"notion",
-        link:"notion"
+        menu:"blog",
+        link:"blog"
       },
       {
         id:4, 
