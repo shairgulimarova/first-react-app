@@ -1,4 +1,4 @@
-import {useRef, useEffect} from 'react'
+import { useEffect, useRef} from 'react'
 import {Link} from 'react-router-dom'
 import {FaGithubSquare, FaInstagramSquare, FaYoutube} from 'react-icons/fa'
 import { init } from 'ityped'

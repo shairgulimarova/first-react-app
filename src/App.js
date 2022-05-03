@@ -8,7 +8,7 @@ import { About, Skills, Blog, Members, Contacts,Notfound } from "./Pages";
 
 
 
-import {Navbar} from './Components'
+import {Navbar,Footer} from './Components'
 
 import './app.scss';
 
@@ -29,6 +29,11 @@ function App() {
             <Route path="*" element = {<Notfound/>}/>
         </Routes>
         </main> 
+
+        <footer>
+          <Footer/>
+        </footer>
+        
     </div>
   );
 }
